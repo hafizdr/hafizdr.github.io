@@ -1,0 +1,500 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="shortcut icon" href="/favicon.ico"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><style id="fullStyle">#full{display:flex;justify-content:center;align-items:center;width:100vw;height:100vh;overflow-x:hidden;overflow-y:hidden}</style><link href="/static/css/2.25b3df9f.chunk.css" rel="stylesheet"><link href="/static/css/main.2355294f.chunk.css" rel="stylesheet"><style type="text/css">.bc-icons.breadcrumb-item::before,
+.bc-icons.breadcrumb-item::after {
+  content: none;
+}
+
+.bc-icons.breadcrumb-item + .active.breadcrumb-item::before,
+.bc-icons.breadcrumb-item + .active.breadcrumb-item::after{
+  content: none;
+}
+
+.bc-icons.breadcrumb-item.active {
+  color: #eeeeee;
+}
+</style><style type="text/css">.btn-group-vertical>.btn,
+.btn-group-vertical>.btn+.btn-group,
+.btn-group-vertical>.btn-group+.btn,
+.btn-group-vertical>.btn-group+.btn-group {
+  margin-left: 0px;
+}
+
+.btn-group-lg>.btn {
+  font-size: 0.9rem;
+  padding: 1rem 2.4rem;
+}
+
+.btn-group-sm>.btn {
+  font-size: 0.6rem;
+  padding: 0.5rem 1.6rem;
+}
+
+.btn-floating.btn.btn-sm,
+.btn-floating.btn.btn-lg {
+  padding: 0;
+}
+</style><style type="text/css">.Ripple {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  opacity: 1;
+  transform: scale(0);
+}
+
+.Ripple-outline {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.Ripple.is-reppling {
+  animation: ripple 0.5s linear;
+}
+
+.Ripple-parent {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+</style><style type="text/css">.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-fade .carousel-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block !important;
+  opacity: 0;
+  z-index: 0;
+  transition: transform 0ms ease-in-out, opacity 0.8s ease-out;
+}
+
+.carousel-fade .carousel-item.active {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+}
+
+.carousel-multi-item .carousel-item {
+  display: inline-block !important;
+}
+
+.carousel .carousel-slide-item {
+  transition: left 0.5s;
+}
+
+.carousel-control-prev, .carousel-control-next, .carousel-item-prev, .carousel-item-next {
+  z-index: 2;
+}
+</style><style type="text/css">.table-wrapper-scroll-y {
+  display: block;
+  max-height: 200px;
+  overflow-y: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+</style><style type="text/css">.dropup .dropdown-menu {
+  top: auto !important;
+  bottom: 100% !important;
+  transform: translate3d(5px, 5px, 0px) !important;
+}
+
+.dropdown-menu-right {
+  left: 0 !important;
+  right: auto !important;
+}
+</style><style type="text/css">.hamburger-button__checkbox {
+  display: none;
+}
+
+.hamburger-button__button {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  top: -5px;
+}
+
+label.hamburger-button__button {
+  margin-bottom: 0;
+}
+
+#nav-icon1 {
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 1px;
+  background-color: #fff;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 5px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 16px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 27px;
+}
+
+.hamburger-button__checkbox:checked+#nav-icon1 span:nth-child(1) {
+  top: 16px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.hamburger-button__checkbox:checked+#nav-icon1 span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.hamburger-button__checkbox:checked+#nav-icon1 span:nth-child(3) {
+  top: 16px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+</style><style type="text/css">.overflow-y-scroll {
+  overflow-y: scroll !important;
+}
+</style><style type="text/css">.popover {
+  width: auto;
+  background-color: white;
+  color: #97999b;
+  text-align: center;
+  display: inline-block;
+  border-radius: 3px;
+  position: absolute;
+  font-size: 0.83em;
+  font-weight: normal;
+  border: 1px rgb(0, 0, 0) solid;
+  /* z-index: 200000; */
+  z-index: 10;
+  /* max-width: initial; */
+  max-width: 274px;
+  text-align: start;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  visibility: hidden;
+}
+
+.show.popover {
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+}
+
+.popover-body {
+  color: #6c6e71;
+}
+
+.popover .popover_arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 6px;
+  color: transparent;
+}
+
+.popover[x-placement^="top"] {
+  margin-bottom: 15px;
+}
+
+.popover[x-placement^="top"] .popover_arrow {
+  border-width: 8px 8px 0 8px;
+  border-color: #d6d6d6 transparent transparent transparent;
+  bottom: -8px;
+  margin-bottom: 0;
+}
+
+.popover[x-placement^="top"] .popover_arrow::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -8px;
+  bottom: 1.5px;
+  border: solid;
+  border-width: 8px 8px 0 8px;
+  border-color: white transparent transparent transparent;
+}
+
+.popover[x-placement^="bottom"] {
+  margin-top: 15px;
+}
+
+.popover[x-placement^="bottom"] .popover_arrow {
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #d6d6d6 transparent;
+  top: -8px;
+  margin-top: 0;
+}
+
+.popover[x-placement^="bottom"] .popover_arrow::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -8px;
+  top: 1.45px;
+  border: solid;
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent white transparent;
+}
+
+.popover[x-placement^="right"] {
+  margin-left: 15px;
+}
+
+.popover[x-placement^="right"] .popover_arrow {
+  border-width: 8px 8px 8px 0;
+  border-color: transparent #d6d6d6 transparent transparent;
+  left: -8px;
+  margin-left: 0;
+}
+
+.popover[x-placement^="right"] .popover_arrow::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -8px;
+  left: 1.45px;
+  border: solid;
+  border-width: 8px 8px 8px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.popover[x-placement^="left"] {
+  margin-right: 15px;
+}
+
+.popover[x-placement^="left"] .popover_arrow {
+  border-width: 8px 0 8px 8px;
+  border-color: transparent transparent transparent #d6d6d6;
+  right: -8px;
+  margin-right: 0;
+}
+
+.popover[x-placement^="left"] .popover_arrow::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -8px;
+  right: 1.45px;
+  border: solid;
+  border-width: 8px 0 8px 8px;
+  border-color: transparent transparent transparent white;
+}
+
+.tooltip {
+  width: auto;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  border-radius: 3px;
+  position: absolute;
+  /* font-size: 0.83em; */
+  font-weight: normal;
+  border: 1px rgb(0, 0, 0) solid;
+  /* z-index: 200000; */
+  z-index: 15;
+  /* max-width: initial; */
+  max-width: 274px;
+  text-align: start;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+  visibility: hidden;
+}
+
+.tooltip-inner {
+  display: block;
+}
+
+.show.tooltip {
+  z-index: 999;
+
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip .popover_arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 6px;
+  color: transparent;
+}
+
+.tooltip[x-placement^="top"],
+.show[x-placement^="top"]:not(.tooltip) {
+  margin-bottom: 5px;
+}
+
+.tooltip[x-placement^="top"] .popover_arrow {
+  border-width: 6px 6px 0 6px;
+  border-color: #131313 transparent transparent transparent;
+  bottom: -6px;
+  margin-bottom: 0;
+}
+
+.tooltip[x-placement^="top"] .popover_arrow::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -6px;
+  bottom: 1.5px;
+  border: solid;
+  border-width: 6px 6px 0 6px;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip[x-placement^="bottom"],
+.show[x-placement^="bottom"]:not(.tooltip) {
+  margin-top: 5px;
+}
+
+.tooltip[x-placement^="bottom"] .popover_arrow {
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #131313 transparent;
+  top: -6px;
+  margin-top: 0;
+}
+
+.tooltip[x-placement^="bottom"] .popover_arrow::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -6px;
+  top: 1.45px;
+  border: solid;
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip[x-placement^="right"],
+.show[x-placement^="right"]:not(.tooltip) {
+  margin-left: 5px;
+}
+
+.tooltip[x-placement^="right"] .popover_arrow {
+  border-width: 6px 6px 6px 0;
+  border-color: transparent #131313 transparent transparent;
+  left: -6px;
+  margin-left: 0;
+}
+
+.tooltip[x-placement^="right"] .popover_arrow::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  left: 1.45px;
+  border: solid;
+  border-width: 6px 6px 6px 0;
+  border-color: transparent black transparent transparent;
+}
+
+.tooltip[x-placement^="left"],
+.show[x-placement^="left"]:not(.tooltip) {
+  margin-right: 5px;
+}
+
+.tooltip[x-placement^="left"] .popover_arrow {
+  border-width: 6px 0 6px 6px;
+  border-color: transparent transparent transparent #131313;
+  right: -6px;
+  margin-right: 0;
+}
+
+.tooltip[x-placement^="left"] .popover_arrow::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  right: 1.45px;
+  border: solid;
+  border-width: 6px 0 6px 6px;
+  border-color: transparent transparent transparent black;
+}
+</style><style type="text/css">.note-dark {
+  background-color: #000;
+  color: #fff;
+  border-color: #58595a;
+}
+
+.note-default {
+  background-color: rgb(164, 243, 235);
+  border-color: #00695c;
+}
+
+.note-elegant {
+  background-color: #2E2E2E;
+  border-color: #212121;
+  color: #fff;
+}
+
+.note-stylish {
+  background-color: #4B515D;
+  border-color: #3E4551;
+  color: #fff;
+}
+
+.note-unique {
+  background-color: #3F729B;
+  border-color: #1C2331;
+  color: #fff;
+}
+
+.note-special {
+  background-color: #37474F;
+  border-color: #263238;
+  color: #fff;
+}
+</style><title>Կապ</title><link rel="canonical" href="https://dr.amirbekyan.com/contact_me" data-react-helmet="true"><meta charset="utf-8" data-react-helmet="true"><meta name="description" content="Dr.Gor  Amirbekyan  contacts,address,telephone" data-react-helmet="true"><meta name="keywords" content="plastic,surgeon,doctor,armenia,gor,amirbekyan,contacts,address,telephone" data-react-helmet="true"></head><body><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><div id="full"><img src="ripple.svg"></div><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><header class="z-depth-half w-100 p-0"><div data-test="container" class="container-fluid"><div data-test="row" class="row"><div data-test="col" class="col-12"><nav data-test="navbar" class="navbar-dark transparent navbar navbar-expand-md z-depth-0 navbarTop " role="navigation"><div data-test="navbar-brand" class="navbar-brand animated pulse  delay-2s"><a aria-current="page" class="nav-link Ripple-parent active" data-test="nav-link" href="/"><img src="/static/media/logo.cc26da24.webp" srcset="/static/media/logo.0f4b6914.png" id="brandLogo"><div data-test="waves" class="Ripple " style="top:0px;left:0px;width:0px;height:0px"></div></a></div><button data-test="navbar-toggler" type="button" class="navbar-toggler"><i data-test="fa" class="fa fa-bars iconAnim"></i></button><div data-test="collapse" id="navbarCollapse1" class="collapse navbar-collapse"><div class="emptySpace"></div><ul data-test="navbar-nav" class="navbar-nav mr-auto  white-text  text-left navbarHeading d-flex flex-column justify-content-center "><h2 class="font-weight-bold text-left h4-responsive">ডাঃ মোঃ হাফিজুর রহমান</h2><h3 class="h5-responsive font-weight-lighter">রেডিওলোজিস্ট, রাজশাহী</h3><h3 class="h5-responsive font-weight-lighter">রাজশাহী মেডিকেল কলেজ হাসপাতাল, রাজশাহী</h3></ul><ul data-test="navbar-nav" class="navbar-nav ml-auto"><div data-test="row" class="row social d-flex flex-row align-items-center justify-content-center"><div class="d-flex align-items-center m-0 mr-4 numbers" id="glob"><i data-test="fa" class="fa fa-phone fa-1.5x teal-text d-flex mr-3  "></i><p class="d-flex flex-column m-0  h6-responsive"><a href="tel:+8801703899984"><span>+880-1703 899 984</span></a></p></div><p class="d-flex align-items-center my-2 text-right h6-responsive"><i data-test="fa" class="fa fa-map-marker-alt fa-1.5x teal-text d-flex mr-3"></i><a href="geo:40.190638, 44.527451 ?q=40.190638, 44.527451(Dr. Gor Amirbekyan ,MD, Plastic Surgeon)" target="_blank" rel="noopener noreferrer"><span>কাজিহাটা, রাজশাহী</span></a></p></div></ul><ul data-test="navbar-nav" class="navbar-nav ml-auto"><div data-test="row" class="row localization d-flex flex-column align-items-center"><li data-test="nav-item" class="nav-item"><button data-test="button" type="button" class="btn-default btn Ripple-parent btn-sm p-1 pl-2 pr-2 z-depth-1"><div data-test="waves" class="Ripple " style="top:0px;left:0px;width:0px;height:0px"></div></button></li><li data-test="nav-item" class="nav-item"><button data-test="button" type="button" class="btn-transparent btn Ripple-parent btn-sm p-1 pl-2 pr-2 z-depth-1"><div data-test="waves" class="Ripple " style="top:0px;left:0px;width:0px;height:0px"></div></button></li></div></ul></div></nav></div></div><div data-test="row" class="row bottomNav default-color z-depth-1 "><div data-test="col" class="col-12"><nav data-test="navbar" class="navbar-dark navbar navbar-expand-md shadow-none" role="navigation"><div data-test="collapse" id="navbarCollapse3" class="collapse navbar-collapse"><ul data-test="navbar-nav" class="navbar-nav justify-content-around w-100 nav-justified bordered men"><li data-test="nav-item" class="nav-item active menuItem"><a aria-current="page" class="nav-link Ripple-parent active" data-test="nav-link" href="/">হোম<div data-test="waves" class="Ripple " style="top:0px;left:0px;width:0px;height:0px"></div></a></li><li data-test="nav-item" class="nav-item"><div class="dd-menu dd-menu-right customDrop null"></div></li><li data-test="nav-item" class="nav-item">চিকিৎসা সমূহ<i data-test="fa" class="fa fa-angle-down ml-3"></i></li><div class="dd-menu-items"></div></ul></div><li data-test="nav-item" class="nav-item menuItem"><a class="nav-link Ripple-parent" data-test="nav-link" href="/news">খবর<div data-test="waves" class="Ripple " style="top:0px;left:0px;width:0px;height:0px"></div></a></li><li data-test="nav-item" class="nav-item menuItem"><a class="nav-link Ripple-parent" data-test="nav-link" href="/gallery">গ্যালারি<div data-test="waves" class="Ripple " style="top:0px;left:0px;width:0px;height:0px"></div></a></li><li data-test="nav-item" class="nav-item menuItem"><a class="nav-link Ripple-parent" data-test="nav-link" href="/about_me">আমার সম্পর্কে<div data-test="waves" class="Ripple " style="top:0px;left:0px;width:0px;height:0px"></div></a></li><li data-test="nav-item" class="nav-item menuItem"><a aria-current="page" class="nav-link Ripple-parent active" data-test="nav-link" href="/contact_me">যোগাযোগ করুন<div data-test="waves" class="Ripple " style="top:0px;left:0px;width:0px;height:0px"></div></a></li></nav></div></div></div></header><main><div data-test="container" class="container"><div data-test="row" class="row"><div data-test="col" class="col-md-9 md-0 mb-5"><form color="default" action="https://formspree.io/xvoqnqbr" method="POST"><div data-test="row" class="row"><div data-test="col" class="col-md-6"><div class="md-form mb-0"><div class="md-form"><input type="text" data-test="input" name="name" required="" class="form-control" id="contact-name" value="" aria-disabled="false"><label class="" for="contact-name" data-error="" data-success="" id="" aria-labelledby="">আপনার নাম</label></div></div></div><div data-test="col" class="col-md-6"><div class="md-form mb-0"><div class="md-form"><input type="email" data-test="input" name="email" required="" class="form-control" id="contact-email" value="" aria-disabled="false"><label class="" for="contact-email" data-error="" data-success="" id="" aria-labelledby="">আপনার ই-মেইল</label></div></div></div></div><div data-test="row" class="row"><div data-test="col" class="col-md-12"><div class="md-form mb-0"><div class="md-form"><input type="text" data-test="input" name="subject" required="" class="form-control" id="contact-subject" value="" aria-disabled="false"><label class="" for="contact-subject" data-error="" data-success="" id="" aria-labelledby="">বিষয়</label></div></div></div></div><div data-test="row" class="row"><div data-test="col" class="col-md-12"><div class="md-form mb-0"><div class="md-form"><textarea data-test="input" name="message" required="" class="md-textarea form-control" id="contact-message" aria-disabled="false"></textarea><label class="" for="contact-message" data-error="" data-success="" id="" aria-labelledby="">এখানে বিস্তারিত লিখুন</label></div></div></div></div><div class="text-center text-md-left"><button data-test="button" type="submit" class="btn-default btn Ripple-parent btn-md">পাঠান<div data-test="waves" class="Ripple " style="top:0px;left:0px;width:0px;height:0px"></div></button></div></form></div><div data-test="col" class="col-md-3 text-center"><ul class="list-unstyled mb-0"></ul></div></div></div></main><footer data-test="footer" class="page-footer default-color font-small"><div data-test="container" class="container text-center text-md-left p-2 "><div data-test="row" class="row d-flex justify-content-end"><div data-test="col" class="col-sm-12 col-md-8 col-lg-5 socialColumn"><h5 class="font-weight-lighter h5-responsive">সামাজিক যোগাযোগ মাধ্যমে অনুসরণ করুন</h5><hr><ul class="d-flex justify-content-center"><li class="list-unstyled animated fadeIn"><a href="https://www.facebook.com/profile.php?id=100001070714841" target="_blank" rel="noopener noreferrer"><i data-test="fa" class="fab fa-facebook fa-2x"></i></a></li><li class="list-unstyled animated fadeIn"><a href="https://api.whatsapp.com/send?phone=+8801703899984" target="_blank" rel="noopener noreferrer"><i data-test="fa" class="fab fa-whatsapp fa-2x"></i></a></li></ul></div></div></div><div class="footer-copyright text-center py-3"><div data-test="container" class="container-fluid"><div data-test="row" class="row"><div data-test="col" class="col">© 2020</div><div data-test="col" class="col">নাফিস ইসলাম</div></div></div></div></footer></div><script>!function(e){function r(r){for(var n,f,i=r[0],l=r[1],a=r[2],c=0,s=[];c<i.length;c++)f=i[c],Object.prototype.hasOwnProperty.call(o,f)&&o[f]&&s.push(o[f][0]),o[f]=0;for(n in l)Object.prototype.hasOwnProperty.call(l,n)&&(e[n]=l[n]);for(p&&p(r);s.length;)s.shift()();return u.push.apply(u,a||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,i=1;i<t.length;i++){var l=t[i];0!==o[l]&&(n=!1)}n&&(u.splice(r--,1),e=f(f.s=t[0]))}return e}var n={},o={1:0},u=[];function f(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,f),t.l=!0,t.exports}f.m=e,f.c=n,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(e,r){if(1&r&&(e=f(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)f.d(t,n,function(r){return e[r]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="/";var i=this.webpackJsonpdrhafiz=this.webpackJsonpdrhafiz||[],l=i.push.bind(i);i.push=r,i=i.slice();for(var a=0;a<i.length;a++)r(i[a]);var p=l;t()}([])</script><script src="/static/js/2.b89104e1.chunk.js"></script><script src="/static/js/main.66b52ae9.chunk.js"></script></body></html>
